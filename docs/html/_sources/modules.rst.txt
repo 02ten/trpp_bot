@@ -1,0 +1,7 @@
+vk_bot
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   main

@@ -1,0 +1,4 @@
+vk-api==11.9.8
+beautifulsoup4==4.11.1
+xlrd==1.2.0
+requests==2.27.1

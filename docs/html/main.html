@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>main module &#8212; документация vk_bot </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="vk_bot" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-main">
+<span id="main-module"></span><h1>main module<a class="headerlink" href="#module-main" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="main.add_group">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">add_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.add_group" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Добавляет группу пользователю
+:param number: пользователь которому нужно заменить группу
+:param group: группа на которую нужно заменить</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.bot">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">bot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.bot" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Основная функция для бота</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.get_group">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">get_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.get_group" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Вспомогательная функция для получения группы пользователя
+:param user_id: текущий пользователь</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.get_week">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">get_week</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.get_week" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Вспомогательная функция для подсчета текущей недели</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.parsing">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">parsing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.parsing" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Скачивает расписание с сайта МИРЭА</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.parsing_exel_by_day">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">parsing_exel_by_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.parsing_exel_by_day" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Извлечение данных из файла с расписанием по дню
+:param group: группа для которого нужно расписание
+:param date: дата на какое нам необходимо расписание
+:return: возвращает расписание</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.parsing_exel_by_week">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">parsing_exel_by_week</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">week</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.parsing_exel_by_week" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Извлечение данных из файла с расписанием по неделе
+:param group: группа для которого необходимо расписание
+:param week: на какую неделю нужно расписание</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.parsing_exel_by_week_day">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">parsing_exel_by_week_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weekday</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.parsing_exel_by_week_day" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Извлечение данных из файла с расписанием по дню недели
+:param group: какой группе нужно расписание
+:param weekday: на какой день недели нужно расписание
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.print_raspisanie_by_day">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">print_raspisanie_by_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raspisanie</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.print_raspisanie_by_day" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Выводит расписание боту по дню
+:param vk: Использует vk_bot для отправки сообщений
+:param event: Распозноет собитие которое произошло
+:param week: Неделя, на которое нам необходимо расписание
+:param raspisanie: Список, в котором передается расписание</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.print_raspisanie_by_week">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">print_raspisanie_by_week</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">week</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raspisanie</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.print_raspisanie_by_week" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Выводит расписание боту по неделе
+:param vk: Использует vk_bot для отправки сообщений
+:param event: Распозноет собитие которое произошло
+:param week: Неделя, на которое нам необходимо расписание
+:param raspisanie: Список, в котором передается расписание</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.print_raspisanie_by_week_day">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">print_raspisanie_by_week_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weekday</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raspisanie</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.print_raspisanie_by_week_day" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Выводит расписание боту по дню недели
+:param vk: Использует vk_bot для отправки сообщений
+:param event: Распозноет собитие которое произошло
+:param week: Неделя, на которое нам необходимо расписание
+:param raspisanie: Список, в котором передается расписание</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.replace_group">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">replace_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.replace_group" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Заменяет группу пользователю
+:param number: пользователь которому нужно заменить группу
+:param group: группа на которую нужно заменить</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">vk_bot</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">vk_bot</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">main module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">vk_bot</a><ul>
+      <li>Previous: <a href="modules.html" title="предыдущая глава">vk_bot</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Ten.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/main.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
